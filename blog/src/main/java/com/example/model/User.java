@@ -19,7 +19,8 @@ import java.sql.Timestamp;
 @Entity //유저클래스가 mysql에 테이블 생성이 됨
 public class User {
     @Id //primary key
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //프로젝트에 연결된 DB의 넘버링 전략을 따름
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //프로젝트에 연결된 DB의 넘버링 전략을 따름
     private int id;
     @Column(nullable = false,length = 30)
     private String username;
